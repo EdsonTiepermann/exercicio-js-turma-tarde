@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 1 </title>
+
+    <script>
+        function menor() {
+            var n1 = document.getElementById('numero1').value;
+            var n2 = document.getElementById('numero2').value;
+            var n3 = document.getElementById('numero3').value;
+
+            n1 = parseFloat(n1);
+            n2 = parseFloat(n2);
+            n3 = parseFloat(n3);
+
+            if (n1 < n2 && n1 < n3) {
+                document.write('O primeiro número é o menor: ' + n1);
+            } else if (n2 < n3) {
+                document.write('O segundo número é o menor: ' + n2);
+            } else if ((n3 < n2) && (n3 < n1)){
+                document.write('O terceiro número é o menor: ' + n3);
+            } else {
+                document.write ('Os números informados são iguais!');
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <input type="number" id="numero1" placeholder="Informe o 1º número">
+    <input type="number" id="numero2" placeholder="Informe o 2º número">
+    <input type="number" id="numero3" placeholder="Informe o 3º número">
+    <button onclick="menor()"> Verificar o menor número </button>
+</body>
+
+</html>
