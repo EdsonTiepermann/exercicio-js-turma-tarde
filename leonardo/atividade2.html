@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 2 </title>
+
+    <script>
+        function nota() {
+            var aluno = document.getElementById('nome').value;
+            var nota1 = document.getElementById('n1').value;
+            var nota2 = document.getElementById('n2').value;
+            var nota3 = document.getElementById('n3').value;
+            nota1 = parseFloat(nota1);
+            nota2 = parseFloat(nota2);
+            nota3 = parseFloat(nota3);
+
+            var media = (nota1 + nota2 + nota3) / 3;
+            var notaFinal = 10 - media;
+            var notaRecuperacao = 10 - media + 2;
+            console.log (media);
+            if (media >= 7) {
+                document.write('Aluno ' + aluno + ' aprovado!')
+            } else if ((media < 7) && (media >= 5)) {
+                document.write('Aluno ' + aluno + ' em prova final precisando tirar: ' + notaFinal);
+            } else {
+                document.write('Aluno ' + aluno + ' em recuperação precisando tirar ' + notaRecuperacao);
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <input type="text" name="" id="nome" placeholder="Nome do Aluno">
+    <input type="number" id="n1" placeholder="Informe o 1ª nota">
+    <input type="number" id="n2" placeholder="Informe o 2ª nota">
+    <input type="number" id="n3" placeholder="Informe o 3ª nota">
+    <button onclick="nota()"> Calcular nota </button>
+</body>
+
+</html>
