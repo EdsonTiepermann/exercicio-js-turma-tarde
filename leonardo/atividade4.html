@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 4 </title>
+    <!-- pedir para o usuário informar um número e mostrar o mês referente a esse número -->
+    <script>
+        function verificaMes() {
+            let mes = document.getElementById('mesRef').value;
+
+            if (mes == 1) {
+                document.write('Janeiro');
+            } else if (mes == 2) {
+                document.write('Fevereiro');
+            } else if (mes == 3) {
+                document.write('Março');
+            } else if (mes == 4) {
+                document.write('Abril');
+            } else if (mes == 5) {
+                document.write('Maio');
+            } else if (mes == 6) {
+                document.write('Junho');
+            } else if (mes == 7) {
+                document.write('Julho');
+            } else if (mes == 8) {
+                document.write('Agosto');
+            } else if (mes == 9) {
+                document.write('Setembro');
+            } else if (mes == 10) {
+                document.write('Outubro');
+            } else if (mes == 11) {
+                document.write('Novembro');
+            } else if (mes == 12) {
+                document.write('Dezembro');
+            } else {
+                document.write('Favor informar um valor válido!');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="mesRef" placeholder="Informe um valor de 1 a 12">
+    <button onclick="verificaMes()"> Verificar mês </button>
+</body>
+
+</html>

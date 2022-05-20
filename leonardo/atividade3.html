@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Atividade 3 </title>
+    <!-- Verificar qual o valor a partir da entrada da Cor do CD -->
     <script>
-        
-        function divisao() {
-            var numero = document.getElementById('valor').value;
-            numero = parseInt (numero);
-            var resto = numero % 3;
-            if (resto == 0) {
-                document.write ('É divisivel por 3!');
-            } else {
-                document.write ('Não é divisivel por 3!');
+        function verificaPreco() {
+            let cor = document.getElementById ('vCor').value;
+            if (cor == 'Verde' ) {
+                document.write('R$10,00'); 
+            } else if (cor == 'Azul') {
+                document.write('R$20,00');
+            } else if (cor == 'Amarelo') {
+                document.write('R$30,00');
+            } else if (cor == 'Vermelho') {
+                document.write('R$40,00');
             }
         }
     </script>
 </head>
 <body>
-    <input type="text" id="valor">
-    <button onclick="divisao()"> Verificar </button>
+    <input type="text" id="vCor" placeholder="Informe a cor do CD">
+    <button onclick="verificaPreco()"> Verificar preço </button>
 </body>
 </html>
