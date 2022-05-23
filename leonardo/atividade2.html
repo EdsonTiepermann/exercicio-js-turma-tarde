@@ -6,20 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Atividade 2 </title>
-
+    <!-- calcular a média de um aluno e informar quanto o mesmo precisa tirar na prova final -->
     <script>
         function nota() {
-            var aluno = document.getElementById('nome').value;
-            var nota1 = document.getElementById('n1').value;
-            var nota2 = document.getElementById('n2').value;
-            var nota3 = document.getElementById('n3').value;
+            let aluno = document.getElementById('nome').value;
+            let nota1 = document.getElementById('n1').value;
+            let nota2 = document.getElementById('n2').value;
+            let nota3 = document.getElementById('n3').value;
             nota1 = parseFloat(nota1);
             nota2 = parseFloat(nota2);
             nota3 = parseFloat(nota3);
 
-            var media = (nota1 + nota2 + nota3) / 3;
-            var notaFinal = 10 - media;
-            var notaRecuperacao = 10 - media + 2;
+            let media = (nota1 + nota2 + nota3) / 3;
+            let notaFinal = 10 - media;
+            let notaRecuperacao = 10 - media + 2;
             console.log (media);
             if (media >= 7) {
                 document.write('Aluno ' + aluno + ' aprovado!')

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 5 </title>
+    <!-- pedir para o usuário informar o seu salário e verificar quantas vezes esse salário corresponde ao salário mínimo  -->
+    <script>
+        function verificaSalario() {
+            const sMinimo = 1212;
+            let salario = document.getElementById('sRef').value;
+            salario = parseFloat(salario);
+            let propSalarial = salario / sMinimo;
+            document.write(propSalarial);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="sRef" placeholder="Informe o salário">
+    <button onclick="verificaSalario()"> Verificar salário </button>
+</body>
+
+</html>
