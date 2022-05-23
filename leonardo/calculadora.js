@@ -10,25 +10,25 @@ function realizarOperacao() {
         case "soma":
             resultado = valor1 + valor2;
             // alert('A operação realizada foi de ' + operacao + ' entre os dados ' + valor1 + ' e ' + valor2 + ' com seu resultado: ' + resultado + '!');
-            document.getElementById ('resposta').value += resultado;
+            document.getElementById ('resposta').value = resultado;
             break;
         
         case "subtração":
             resultado = valor1 - valor2;
             // alert('A operação realizada foi de ' + operacao + ' entre os dados ' + valor1 + ' e ' + valor2 + ' com seu resultado: ' + resultado + '!');
-            document.getElementById ('resposta').value += resultado;
+            document.getElementById ('resposta').value = resultado;
             break;
 
         case "multiplicação":
             resultado = valor1 * valor2;
             // document.write ('A operação realizada foi de ' + operacao + ' entre os dados ' + valor1 + ' e ' + valor2 + ' com seu resultado: ' + resultado + '!');
-            document.getElementById ('resposta').value += resultado;
+            document.getElementById ('resposta').value = resultado;
             break;
 
         case "divisão":
             resultado = valor1 / valor2;
             // document.write ('A operação realizada foi de ' + operacao + ' entre os dados ' + valor1 + ' e ' + valor2 + ' com seu resultado: ' + resultado + '!');
-            document.getElementById ('resposta').value += resultado;
+            document.getElementById ('resposta').value = resultado;
             break;  
 
         default:

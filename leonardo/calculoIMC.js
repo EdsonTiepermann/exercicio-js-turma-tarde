@@ -6,7 +6,6 @@ function calcularIMC() {
 
     altura = parseFloat(altura);
     peso = parseFloat(peso);
-    altura = altura / 100;
     var imc = peso / (altura * altura);
 
     var classificacao = '';
@@ -29,8 +28,5 @@ function calcularIMC() {
         classificacao = 'obesidade grau 3!';
     }
 
-    document.getElementById ('result').value += (pessoa + ' possui indice de massa corporal igual ' + imc + ', sendo classificado como: ' + classificacao);
-
-    // document.write(pessoa + ' possui indice de massa corporal igual ' + imc + ', sendo classificado como: ' + classificacao);
-
+    document.getElementById ('result').value = (pessoa + ' possui indice de massa corporal igual ' + imc + ', sendo classificado como: ' + classificacao);
 }
