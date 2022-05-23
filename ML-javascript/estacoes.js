@@ -24,6 +24,6 @@ switch (mes) {
 
 
     default:
-        console.log("outro mês")
+        console.log("")
         break;
 }
