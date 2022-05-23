@@ -1,5 +1,6 @@
 let salariobase = 2000
 let colaborador = "gerente"
+
 let acrescimo 
 
 switch (colaborador) {
@@ -11,6 +12,7 @@ switch (colaborador) {
         case "gerente" :
         acrescimo = salariobase + 200 
         console.log (" O " + colaborador + " recebe um salário de " + acrescimo)
+        break;
 
     default:
         break;
