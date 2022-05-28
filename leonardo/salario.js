@@ -6,15 +6,15 @@ function verificaSalario() {
     switch (funcionario) {
         case "gerente":
             // alert ('Salário de: R$' + gerente);
-            document.getElementById ('resultado').value += ('R$' + gerente) ;
+            document.getElementById ('resultado').value = ('R$' + gerente) ;
             break;
         case "supervisor":
             // alert ('Salário de: R$'+ supervisor);
-            document.getElementById ('resultado').value += ('R$' + supervisor) ;
+            document.getElementById ('resultado').value = ('R$' + supervisor) ;
             break;
         default:
             // alert ('Salário de: R$' + base);
-            document.getElementById ('resultado').value += ('R$' + base) ;
+            document.getElementById ('resultado').value = ('R$' + base) ;
             break;
     }
 }
