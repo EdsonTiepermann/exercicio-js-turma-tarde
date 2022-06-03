@@ -17,17 +17,19 @@ function adicionarEverificarNumero () {
                 console.log (numeroArray);
             } else {
                 console.log ('Número já adicionado');
-            }
-
-            if ((numeroUsuario >= 0) && (numeroUsuario <= 25)) {
-                document.getElementById ('intervalo0e25').value += (numeroUsuario + '; ');
-            } else if ((numeroUsuario >= 26) && (numeroUsuario <= 50)) {
-                document.getElementById ('intervalo26e50').value += (numeroUsuario + '; ');
-            } else if ((numeroUsuario >= 51) && (numeroUsuario <= 75)) {
-                document.getElementById ('intervalo51e75').value += (numeroUsuario + '; ');
-            } else if ((numeroUsuario >= 76) && (numeroUsuario <= 100)){ 
-                document.getElementById ('intervalo76e100').value += (numeroUsuario + ';');
+                // return false significa que vai ser encerrado a função quando chegar nesse resultado
+                return false;
             }
             break;
+    }
+
+    if ((numeroUsuario >= 0) && (numeroUsuario <= 25) ) {
+        document.getElementById ('intervalo0e25').value += (numeroUsuario + '; ');
+    } else if ((numeroUsuario >= 26) && (numeroUsuario <= 50)) {
+        document.getElementById ('intervalo26e50').value += (numeroUsuario + '; ');
+    } else if ((numeroUsuario >= 51) && (numeroUsuario <= 75)) {
+        document.getElementById ('intervalo51e75').value += (numeroUsuario + '; ');
+    } else if ((numeroUsuario >= 76) && (numeroUsuario <= 100)){ 
+        document.getElementById ('intervalo76e100').value += (numeroUsuario + ';');
     }
 }

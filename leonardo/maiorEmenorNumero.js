@@ -19,6 +19,7 @@ function adicionaEVerificaNumero() {
                 console.log (arrayNumero);
             } else {
                 console.log ('Número já adicionado');
+                return false;
             }
 
             function ordemNumeros (a, b) {
