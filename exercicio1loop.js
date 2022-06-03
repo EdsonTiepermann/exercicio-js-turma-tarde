@@ -12,8 +12,9 @@ for(let n = 100; n<200; n++){
     // console.log(resultado)
 
     if (resultado == 0){
-        console.log(n)
-    }
+        // console.log(n)
+    }else 
+    console.log(n);
 
 }
 
