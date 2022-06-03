@@ -41,5 +41,5 @@ console.log(Alunos)
 Alunos.pop();
 console.log(Alunos);
 
-let procurar = Alunos.indexOf('Marcely')
+let procurar = Alunos.indexOf('')
 console.log (procurar)
