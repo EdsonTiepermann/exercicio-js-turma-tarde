@@ -29,7 +29,7 @@ if (imc < 35 > 39.9) {
     
 }
 if (imc < 35 > 40) {
-    console.log("Obesidade Morbida");
+    console.log("Obesidade Grau III ou Morbida");
 } else {
     
 }
