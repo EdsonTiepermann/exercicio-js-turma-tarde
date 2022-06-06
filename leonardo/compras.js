@@ -62,31 +62,5 @@ function valorPagamento() {
     } else {
         alert ('Favor informar valores válidos!');
     }
-
-    // switch (tipoPagamento) {
-    //     case "pix":
-    //         valorFinal = totalCompra - (totalCompra * 10 / 100);
-    //         console.log(valorFinal);
-    //         break;
-    //     case "débito":
-    //         console.log(totalCompra);
-    //         break;
-    //     case "crédito":
-    //         valorFinal = totalCompra + (totalCompra * 5 / 100);
-    //         console.log(valorFinal);
-    //         break;
-    //     case "parcelado":
-    //         valorFinal = totalCompra + (totalCompra * 10 / 100);
-    //         console.log(valorFinal);
-    //         break;
-    //     case "carne":
-    //         valorFinal = totalCompra + (totalCompra * 20 / 100);
-    //         console.log(valorFinal);
-    //         break;
-    //     default:
-    //         console.log('Favor informar valores válidos!')
-    //         break;
-    // }
-
 }
 

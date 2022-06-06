@@ -1,10 +1,13 @@
-let numeroArray = [];
-let numeroUsuario = 0;
-let somaPar = 0;
-let somaImpar = 0;
-let mediaPar = 0;
-let mediaGeral = 0;
-let somaGeral = 0;
+var numeroArray = [];
+var numeroUsuario = 0;
+var somaPar = 0;
+var somaImpar = 0;
+var mediaPar = 0;
+var mediaGeral = 0;
+var somaGeral = 0;
+var resultado = 0;
+var totalPar = 0;
+var totalNumeros = 0;
 
 function adicionarErealizarMediadosNumeros() {
     numeroUsuario = document.getElementById ('valorInformadoUsuario').value;
@@ -20,15 +23,17 @@ function adicionarErealizarMediadosNumeros() {
                 console.log (numeroArray);
             } else {
                 console.log ('Número já adicionado');
+                return false;
             }
 
-            let resultado = numeroUsuario%2;
+            resultado = numeroUsuario%2;
 
             if (resultado == 0) {
                 document.getElementById ('numerosPares').value += (numeroUsuario + '; ');
                 somaPar += numeroUsuario;
                 console.log (somaPar);
-                mediaPar = somaPar / numeroArray.length;
+                totalPar ++;
+                mediaPar = somaPar / totalPar;
                 document.getElementById ('mediaPares').value = (mediaPar);
             } else {
                 document.getElementById ('numerosImpares').value += (numeroUsuario + '; ');
@@ -42,3 +47,6 @@ function adicionarErealizarMediadosNumeros() {
             break;
     }
 }
+
+console.log (numeroArray);
+
