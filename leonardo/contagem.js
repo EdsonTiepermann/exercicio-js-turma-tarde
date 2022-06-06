@@ -4,7 +4,7 @@ function calcularNumeros() {
     numeroInicial = parseFloat(numeroInicial);
     numeroFinal = parseFloat(numeroFinal);
     for (numeroInicial; numeroInicial <= numeroFinal; numeroInicial++) {
-        document.write (numeroInicial + ' ');
+        document.write (numeroInicial + ', ');
         console.log(numeroInicial);
     }
 }
