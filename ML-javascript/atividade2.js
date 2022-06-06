@@ -6,9 +6,7 @@ let somaImpar = 0;
 for (let index = 1; index < 501; index++) {
     resto = index % 3
     if (resto != 0) {
-        somaImpar = somaImpar + index;
-       
-        
+        somaImpar = somaImpar + index;   
     }
     
 }

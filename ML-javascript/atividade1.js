@@ -5,8 +5,6 @@ let resto = 0;
 for (let index = 100; index < 201; index++) {
     resto = index % 2
     if (resto != 0 ) {
-        console.log(index);
-        
-    }
-    
+        console.log(index);   
+    } 
 }
