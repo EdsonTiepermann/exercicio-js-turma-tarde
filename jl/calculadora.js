@@ -1,5 +1,5 @@
-let a = 6
-let b = 6
+let a = 12
+let b = 54
 let resultado;
 let opcao = "soma";
 switch (opcao) {
