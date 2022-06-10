@@ -13,29 +13,36 @@
 // 02 - Desenvolver um algoritmo que efetue a soma de todos os números ímpares que são múltiplos de três 
 // e que se encontram no conjunto dos números de 1 até 500. 
  
-   let resto = 0;
-   let multiplo = 0;
-   let  resultado = 0;
+   // let resto = 0;
+   // let multiplo = 0;
+   // let  resultado = 0;
    
 
-   for (let index = 1; index <= 10; index++) {
-      resto = index % 2;
-      multiplo =index % 3;
-      console.log(resto);
+   // for (let index = 1; index <= 10; index++) {
+   //    resto = index % 2;
+   //    multiplo =index % 3;
+   //    console.log(resto);
 
-      if((resto != 0) && (multiplo == 0)){
-         resultado = resultado + index
+   //    if((resto != 0) && (multiplo == 0)){
+   //       resultado = resultado + index
          
-      }
+   //    }
       
-   }
+   // }
 
 
-// let n = 5
+
+   // 03 - Escrever um algoritmo que leia um valor para uma variável N de 1 a 10 e calcule a tabuada de N. 
+   // Mostre a tabuada na forma: 0 x N = 0, 1 x N = 1N, 2 x N = 2N, ..., 10 x N = 10N
+
+// let n = 8
 // let result
+
+
+
 // for (let i = 0; i <= 10; i++) {
 //     result = n * i
-//     console.log(n + "*" + i + " = " + result )
+//     console.log(n + "*" + i + " = " + result + "N" )
 // }   
 
 
@@ -86,7 +93,7 @@
 // console.log(alturas);
 
 
-
+// Exemplo
 
 // let numeros = [5, 15, 55, 73, 40];
 

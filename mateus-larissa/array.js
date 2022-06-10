@@ -95,4 +95,19 @@
 // }
 
 
-
+// let idades = [13, 15, 44, 34, 10, 18, 22, 28, 30, 38, 26, 11, 8, 17, 33, 59, 45, 14]
+// let resultado = 0
+// let resultado2 = 0
+    
+// for (let index = 0; index < idades.length; index++) {
+//    if (idades[index] >=18) { 
+//     resultado++;
+    
+       
+//    }
+//     else {
+//      resultado2++;
+//     }
+// }
+// console.log(resultado + " pessoas são maior de idade ");
+// console.log(resultado2 + " pessoas são menor de idade ");
