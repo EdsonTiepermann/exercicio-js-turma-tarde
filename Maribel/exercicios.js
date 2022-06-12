@@ -75,3 +75,45 @@
 
 // console.log(numeros[0]);
 // console.log(numeros[numeros.length-1]);
+
+//Informe a idade de 18 pessoas e verifique quantas pessoas são maiores de idade e quantas são menores//
+
+// let idade =[6,7,18,15,3,4,25,27,24,10,36,45,65,72,53, 4,5,6,8,7];
+// let maiores = 0;
+// let menores = 0;
+// console.log(idade.length);
+//     for (let index = 0; index < idade.length; index++){
+//          if (idade[index] >= 18 ){
+//             maiores++;
+//         }else{
+//             menores++;
+//         }
+//     }
+
+//     console.log (maiores);
+//     console.log (menores);
+
+// 06 - Escrever um algoritmo que leia 10 números e conte quantos deles estão nos seguintes intervalos:
+//  [0-25], [26-50], [51-75] e [76-100]. mostre na tela a quantidade de vezes que aparece cada intervalo. [array]
+
+    let numeros =[25,37,46,59,4,11,24,72,87,94];
+    let intervalo1 = 0;
+    let intervalo2 = 0;
+    let intervalo3 = 0;
+    let intervalo4 = 0;
+     for (let index = 0; index < numeros.length; index++){
+         if (numeros[index] <= 25 ){
+             intervalo1++;
+         }else if (numeros[index] > 26 <=50){
+               intervalo2++;
+            }else if (numeros[index] > 51 <=75){
+                intervalo3++;
+            }else{
+                intervalo4++;
+            }    
+     }
+  console.log (intervalo1);
+  console.log (intervalo2);
+  console.log (intervalo3);
+  console.log (intervalo4);
+   
