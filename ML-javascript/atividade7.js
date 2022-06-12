@@ -1,5 +1,5 @@
 // 07 - Faça um algoritmo que leia 6 valores positivos. Calcule a quantidade de números pares e ímpares, a média de valores pares e a média geral dos números lidos.[array]
-let numeros = [6 , 7 , 17 , 20 , 3 , 4];
+let numeros = [6 , 7 , 18 , 20 , 9 , 4];
 let resto = 0;
 let totalPar = 0;
 let totalImpar = 0;

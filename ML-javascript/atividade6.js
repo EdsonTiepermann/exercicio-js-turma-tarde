@@ -1,0 +1,2 @@
+// Escrever um algoritmo que leia 10 números e conte quantos deles estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100].
+//  mostre na tela a quantidade de vezes que aparece cada intervalo. [array]
