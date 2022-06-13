@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvore Dom</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+</head>
+<body>
+    <h1>35</h1>
+    <p id="result">Resultado 1</p>
+    <p>Resultado 2 com manipulação de <strong>Dom</strong> dentro do JSC</p>
+    <div>Teste Div</div>
+</body>
+</html>
+<script>
+    // let tags = 
+    document.body.style.background = "red"
+    var tagp1 = document.getElementsByTagName('p')[0]; /*se quiser apenas a id substitui depois do get*/
+    // alert(tagp.qinnerText);
+    
+    window.document.write.(tagp1.innerHTML) /*pega exatamente tudo que está dentro da tag, inclusive outras tags*/
+    document.write("Inserir o resultado da outra tag:" + tagp1.innerHTML);
+    tagp1.style.color = "black"
+
+    window.document.write.(tagp1.innerText) /*pega apenas o texto*/
+    //   *mesmo se tiver apenas uma tag p, pegamos a sua posição*
+</script>
