@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Números </title>
+</head>
+
+<body>
+    <h1> Informe um número </h1>
+    <input type="text" id="numeroInformado">
+    <button onclick="verificacaoNumero()"> Adicionar número </button> <br> <br>
+    <span> Números informados: </span>
+    <input id="numerosInformados" type="text"> </input> <br>
+    <span> Total de números informados: </span>
+    <input id="totalNumerosInformados" type="text"> </input> <br> <br> <br>
+    <span> Números impares informados: </span>
+    <input id="numerosImparesInformados" type="text"> </input> <br>
+    <span> Total números impares: </span>
+    <input type="text" id="totalNumerosImpares"> <br> <br> <br>
+    <span> Números pares informados: </span>
+    <input id="numerosParesInformados" type="text"> </input> <br>
+    <span> Total números pares: </span>
+    <input type="text" id="totalNumerosPares">
+</body>
+
+</html>
+<script>
+    var numeroArray = [];
+    var numeroUsuario = '';
+    var resultado = 0;
+    var totalPar = 0;
+    var totalImpar = 0;
+    var totalNumeros = 0;
+
+    function verificacaoNumero() {
+        numeroUsuario = document.getElementById('numeroInformado').value;
+        numeroUsuario = parseFloat(numeroUsuario);
+
+        if (numeroArray.indexOf(numeroUsuario) == -1) {
+            numeroArray.push(numeroUsuario);
+        } else {
+            console.log('Número já adicionado');
+            return false;
+        }
+
+        function ordemNumeros(a, b) {
+            return a - b;
+        }
+
+        numeroArray.sort(ordemNumeros);
+
+        resultado = numeroUsuario % 2;
+
+        if (resultado == 0) {
+            totalPar++;
+            document.getElementById('numerosParesInformados').value += numeroUsuario + ', ';
+            document.getElementById('numerosParesInformados').style.color = 'blue';
+            document.getElementById('totalNumerosPares').value = totalPar;
+            document.getElementById('totalNumerosPares').style.color = 'blue';
+        } else {
+            totalImpar++;
+            document.getElementById('numerosImparesInformados').value += numeroUsuario + ', ';
+            document.getElementById('numerosImparesInformados').style.color = 'red';
+            document.getElementById('totalNumerosImpares').value = totalImpar;
+            document.getElementById('totalNumerosImpares').style.color = 'red';
+        }
+
+        document.getElementById('numerosInformados').value = numeroArray + '.';
+        document.getElementById('totalNumerosInformados').value = numeroArray.length;
+    }
+</script>
