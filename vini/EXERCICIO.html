@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+    <style>
+        div{
+            display: none;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>exercicio idade</h1>
+    <div>a pessoa é</div>
+</body>
+</html>
+<script>
+    var dividade
+      
+    dividade = window.document.getElementsByTagName('div')[0];
+    var corpo = document.body;
+
+    function setidade(idade) {
+        if (idade == 0) {
+            corpo.style.background = 'white';
+            corpo.style.color = 'black';
+            
+        } else if (idade >= 18) {
+            corpo.style.background = 'black';
+            corpo.style.color = 'silver';
+            document.write(dividade.innerHTML + ' maior de idade, possui ' + idade + ' anos ' )
+            
+        } else {
+            corpo.style.background = 'red';
+            corpo.style.color = 'white';
+            document.write(dividade.innerHTML + ' menor de idade, possui ' + idade + ' anos ')
+            
+        } {
+            
+        }
+        
+    }
+    setidade(0);
+</script>
