@@ -175,4 +175,4 @@
 // suaordenacao.reverse;
 // console.log(numeros[0], numeros[numeros.length -1]);
 
-.
+
