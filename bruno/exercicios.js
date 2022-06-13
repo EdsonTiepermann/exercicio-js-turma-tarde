@@ -68,5 +68,43 @@
 // }
 // console.log()
 
-// 03 - Escrever um algoritmo que leia um valor para uma variável N de 1 a 10 e calcule a tabuada de N. Mostre a tabuada na forma: 0 x N = 0, 1 x N = 1N, 2 x N = 2N, ..., 10 x N = 10N
+// 05 - Desenvolver um algoritmo que leia a altura(em cm) de 15 pessoas. Este programa deverá calcular e mostrar : [array] a. A menor altura do grupo; b. A maior altura do grupo;
 
+// function bubbleSort(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         for (let j = i + 1; j < array.length; j ++) {
+//             if (array[i] > array[j]) {
+//                 let aux = array[1];
+//                 array[i] = array[j];
+//                 array[j] = aux
+//             }
+//         }
+//     }
+// }
+
+// let numeros = [175, 168, 174];
+// bubbleSort(numeros);
+// numeros.reverse();
+// console.log(numeros);
+
+// function ordenaNum(a,b){ 
+//     // operador condicional ternario 
+//     return a > b ? 1 : a < b ? -1 : 0;
+//     if (a > b) {
+//         return 1
+//     } else if (a < b ) {
+//         return -1
+//     } else {
+//         return 0
+//     }
+// }
+   
+// numeros.sort(ordenaNum2);
+// numeros.reverse();
+// console.log(numeros);
+
+
+// 06 - Escrever um algoritmo que leia 10 números e conte quantos deles estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. mostre na tela a quantidade de vezes que aparece cada intervalo. [array]
+
+// let numeros [0-25 , 26-50 , 51-75 , 76-100]
+// for ()
