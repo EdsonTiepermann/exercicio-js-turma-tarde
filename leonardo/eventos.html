@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eventos </title>
+    <style>
+        #container {
+            background-color: blue;
+            color: white;
+            width: 100%;
+            line-height: 70px;
+            height: 70px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> Eventos </h1>
+    <div id="container">
+        <span> Manipulação com ID </span>
+    </div>
+
+</body>
+</html>
+<script>
+    // maneira de chamar um função com onclick, onmouseenter, onmouseout
+    document.getElementById('container').addEventListener('click', clicar);
+    document.getElementById('container').addEventListener('mouseenter', entrar);
+    document.getElementById('container').addEventListener('mouseout', sair);
+
+    function clicar () {
+        document.getElementById('container').innerHTML = 'Click';
+        document.getElementById('container').style.background = 'red';
+    };
+
+    function entrar () {
+        document.getElementById('container').innerHTML = 'Entrar';
+        document.getElementById('container').style.background = 'blue';
+    };
+
+    function sair () {
+        document.getElementById('container').innerHTML = 'Sair';
+        document.getElementById('container').style.background = 'blue';
+    };
+</script>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora </title>
+</head>
+
+<body>
+    <input type="number" id="v1" placeholder="Informe o valor 1">
+    <input type="number" id="v2" placeholder="Informe o valor 2">
+    <select id="operacao">
+        <option value=""> -- Selecione a operação -- </option>
+        <option value="+"> Soma </option>
+        <option value="-"> Subtração </option>
+        <option value="/"> Divisão </option>
+        <option value="*"> Multiplicação </option>
+    </select>
+    <button onclick="realizarOperacao()"> Realizar cálculo </button>
+    <input type="text" id='resposta' placeholder="Resultado">
+</body>
+
+</html>
+
+<script>
+    // ATIVIDADE 8
+    function realizarOperacao() {
+        let valor1 = document.getElementById('v1').value;
+        let valor2 = document.getElementById('v2').value;
+        let operacao = document.getElementById('operacao').value;
+        valor1 = parseFloat(valor1);
+        valor2 = parseFloat(valor2);
+        let resultado = '';
+        switch (operacao) {
+            case "+":
+                resultado = valor1 + valor2;
+                document.getElementById('resposta').value = resultado;
+                break;
+
+            case "-":
+                resultado = valor1 - valor2;
+                document.getElementById('resposta').value = resultado;
+                break;
+
+            case "*":
+                resultado = valor1 * valor2;
+                document.getElementById('resposta').value = resultado;
+                break;
+
+            case "/":
+                resultado = valor1 / valor2;
+                document.getElementById('resposta').value = resultado;
+                break;
+
+            default:
+                alert ('Informe valores e uma operação válidos!');
+                break;
+        }
+    }
+</script>
