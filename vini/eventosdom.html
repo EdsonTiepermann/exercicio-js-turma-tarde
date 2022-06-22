@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container {
+            background-color: blue;
+            color: white;
+            width: 100%;
+            line-height: 70px;
+            height: 70px;
+            text-align: center;
+        }
+    </style>
+    <title>eventos</title>
+</head>
+<body>
+    <div id="container">
+        manipulaçao com id...</div>
+</body>
+</html>
+<script>
+document.getElementById('container').addEventListener('click', clicar)
+document.getElementById('container').addEventListener('mouseenter', entra)
+document.getElementById('container').addEventListener('mouseout', sair)
+    function clicar() {
+        document.getElementById('container').innerText = 'cliquei teste'
+        document.getElementById('container').style.background = 'red'
+    }
+    function entra() {
+        document.getElementById('container').innerText = 'cliquei teste'
+        document.getElementById('container').style.background = 'blue'
+    }
+    function sair() {
+        document.getElementById('container').innerText = 'cliquei teste'
+        document.getElementById('container').style.background = 'black'
+    }
+</script>

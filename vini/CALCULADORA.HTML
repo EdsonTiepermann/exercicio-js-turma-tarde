@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script type="text/javascript" ></script>
-    <title>html</title>
+    <title>CALCULADORA</title>
 </head>
 <body>
-    <h1>Exercicios</h1>
+    <h1>CALCULADORA</h1>
     <input type="number" name="ent1" id="ent1" placeholder="Numero 1">
     <input type="number" name="ent2" id="ent2" placeholder="Numero 2">
     <input type="submit" value="Somar" onclick="somar">
-    <h4>Resultado:</h4>
+    <h4>Resultado</h4>
 </body>
 </html>
 <script>
-        function somar() {
+        function somar(4,5) {
         let num1 = document.getElementById('ent1');
         let num2 = document.getElementById('ent2');
         let n1 = Number(num1.value);
         let n2 = Number(num2.value);
         let result = 0;
+        let result1 = 0;
         result = n1 + n2;
+        result1 = n1 * n2;
         document.getElementById('result').innerText = 'O resultado da soma é'
     }
-    
+    function somar() {
+      let result =0;
+        
+    }
 </script>
