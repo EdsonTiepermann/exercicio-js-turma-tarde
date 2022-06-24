@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <input type="text" id = "entrada">
+    <br><br>
+    <input type="button" id="verificar" value="verificar" onclick="verificarValor()">
+    <div id="preco"></div>
+
+</body>
+</html>
+<script>
+    function verificarValor() {
+        let preco = document.getElementById("preco");
+        let cor = document.getElementById("entrada").value;
+        let fundo = document.body.style.background;
+        switch (cor) {
+            case "verde":
+                preco.innerHTML = `O valor do Cd ${cor} é R$ 10,00 `
+                document.body.style.background = "green";
+                break;
+            case "amarelo" : 
+            preco.innerHTML = `O valor do Cd ${cor} é R$ 12,00 `
+            document.body.style.background = "yellow";
+            case "vermelho" :
+                preco.innerHTML= `O valor do Cd ${cor} é R$ 15,00 `
+                documento.body.style.background = "red";
+                case "azul":
+                    preco.innerHTML= `O valor do Cd ${cor} é R$ 25,00 `
+                    document.body.style.background = "blue";
+        
+            default:
+                break;
+        }
+    }
+</script>

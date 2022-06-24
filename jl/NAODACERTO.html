@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="cargo" name="cargo"/> 
+    <input type="number" id="salario" name="aumento" /> 
+    <button type="button"> ver </button> 
+
+    <script>
+        document.getElementById("verificar").addEventListener("click", verificarcargo);
+
+        function verificarcargo() {
+            
+        
+        let cargo = document.getElementById("cargo").value;
+        let fundo = document.body.style.background;
+        let porcentagem = document.getElementById("porcentagem");
+        let salario = document.getElementById("resultado");
+        let porcento = Number (porcentagem.value);
+
+        if (cargo == desenvolvedor) {
+            salario = 2000 + porcento;
+            texto.innerHTML = ` O cargo é ${cargo} e o salário é R$ ${resultado}`;
+            document.body.style.backgroundColor = "black";
+        } else if ( cargo == supervisor ) {
+            salario = 1500 + porcento;
+            texto.innerHTML = `O cargo é ${cargo} e o salário é R$ ${resultado}`;
+            document.body.style.backgroundColor = "pink";
+        } else (cargo == gerente){
+            salario = 1000 + porcento; 
+            texto.innerHTML = `O cargo é ${cargo} e o salário é R$ ${resultado}`;
+            document.body.style.backgroundColor = "green";
+        }
+    }
+
+
+
+
+        // var cargo ;
+        //     let salario;
+        // switch (cargo) {
+        //     case "desesnvolvedor":
+        //         salario = 2000 + porcentagem;
+
+        //         break;
+        //     case "supervisor":
+        //         salario = 1500;
+        //         break;
+        //     case "gerente":
+        //         salario = 1000;
+        //         break;
+        //     default: salario = 0;
+        //         break;
+        // }
+
+        // if { cargo == desenvolvedor } {
+        //     document.body.style.backgroundColor = "black";
+        //     document.style.body.color = "white";
+        //     document.write = (" O cargo é desenvolvedor e o salário é ");
+        // } if { cargo == supervisor } {
+        //     document.body.style.backgroundColor = "pink";
+        //     document.style.body.color = "black";
+        //     document.write = (" O cargo é supervisor e o salário é ");
+        // }  if { cargo == gerente } {
+        //     document.body.style.backgroundColor = "green";
+        //     document.style.body.color = "yellow";
+        //     document.write = (" O cargo é gerente e o salário é ");
+        // }
+
+    </script>
+</body>
+
+</html>
