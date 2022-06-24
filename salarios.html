@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salario</title>
+</head>
+
+<body>
+    <div>
+        <input class="cargo" type="text">
+        <input class="porcentagem" type="number">
+        <br>
+        <br>
+        <input onclick="verificarCargo" class="verif" type="button">
+    </div>
+    <div class="result">result</div>
+    <script>
+
+        function verificarCargo() {
+            let cargo = document.getElementsByClassName("cargo").value;
+            let fundo = document.body.style.background;
+            let texto = document.getElementsByClassName("result");
+            let porcento = document.getElementsByClassName("porcentagem");
+            let porc = Number(porcento.value);
+
+            switch (cargo) {
+                case "gerente":
+                    texto = 1000 * porc;
+                    document.body.style.background = "black";
+                    document.body.style.color = "white";
+                    document.write("você é ${cargo}");
+                    break;
+                case "supervisor":
+                    result = 1500 * porc;
+
+                    break;
+                case "desenvolvedor":
+                    result = 2000 * porc;
+                    break;
+
+                default:
+                    salario = 2000
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
