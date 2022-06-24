@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercícios</h1>
+    <input type="number" name="ent1" id="ent1" placeholder="Número 1">
+    <input type="number" name="ent2" id="ent2" placeholder="Número 2">
+    <input type="text" name="ent2" id="cacl" placeholder="entrada">
+    <input type="button" value="calcular" id="idCalcular" onclick="calcular()">
+
+    <br>
+    <br>
+    <div id="resultado">Resultado: </div>
+</body>
+
+</html>
+<script>
+    document.getElementById('idCalcular').addEventListener('click', calcular)
+
+    function calcular() {
+        let calc = document.getElementById('cacl').value;
+        let num1 = document.getElementById('ent1');
+        let num2 = document.getElementById('ent2');
+        let n1 = Number(num1.value);
+        let n2 = Number(num2.value);
+        let result = 0;
+
+        switch (calc) {
+            case 'soma':
+                result = n1 + n2
+
+                document.getElementById('resultado').innerText = `O resultado da soma entre  ${n1} e ${n2} é: ${result}`;
+                break;
+            case 'subtração':
+                result = n1 - n2
+            
+                document.getElementById('resultado').innerText = `O resultado da subtração entre  ${n1} e ${n2} é: ${result}`;
+                break;
+            case 'divisão':
+                result = n1 / n2
+          
+                document.getElementById('resultado').innerText = `O resultado da divisão entre  ${n1} e ${n2} é: ${result}`;
+                break;
+            case 'multiplicação':
+                result = n1 * n2
+             
+                document.getElementById('resultado').innerText = `O resultado da multiplicação entre  ${n1} e ${n2} é: ${result}`;
+                break;
+
+            default: 'não á resultado'
+                break;
+        }
+    }
+</script>

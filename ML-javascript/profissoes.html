@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="cargo" placeholder="Cargo">
+    <input type="text" id="porcentagem" placeholder="porcentagem">
+    <br><br>
+    <input type="button" id="verificar" value="Verificar">
+    <div id="result"></div>
+
+</body>
+
+</html>
+<script>
+    document.getElementById('verificar').addEventListener('click', verificarCargo);
+
+    function verificarCargo(cargo) {
+        let cargo = document.getElementById('cargo').value;
+        let fundo = document.body.style.background;
+        let texto = document.getElementById('result');
+        let porcentagem = document.getElementById('porcentagem');
+        let porc = Number(porcentagem.value);
+    }
+
+    switch (cargo) {
+        case 'gerente':
+            result = 1000 + porc
+            texto.innerHTML = O cargo é ${ cargo } e o salário calculado é R$: R$ ${ result }
+            document.body.style.background = 'green';
+            break;
+        case 'supervisor':
+            result = 1500 + porc
+            texto.innerHTML = O cargo é ${ cargo } e o salário calculado é R$: R$ ${ result }
+            document.body.style.background = 'yellow';
+            break;
+        case 'desenvolvedor':
+            result = 2000 + porc
+            texto.innerHTML = O cargo é ${ cargo } e o salário calculado é R$: R$ ${ result }
+            document.body.style.background = 'blue';
+            break;
+        default
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+</script>
