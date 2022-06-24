@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO</title>
+</head>
+<body>
+    <h1>Exercicio CDs</h1>
+    <input type="text" id="cor">
+    <input type="submit" id="verificar" value="Verificar">
+    <div id="result"></div>
+</body>
+</html>
+<script>
+    document.getElementById('verificar').addEventListener('click', verificarCd);
+
+    function verificarCd() {
+        let cd = document.getElementById('cor').value;
+        let fundo = document.body.style.background;
+        let texto = document.getElementById('result');
+        switch (cd) {
+            case 'verde':
+                result = 10,00
+                texto.innerHTML = 'O preço do CD é ' + result;
+                document.body.style.background = 'green'
+            break;
+            case 'amarelo':
+        result = 12,00
+        texto.innerHTML = `O preço do CD é ` + result
+        document.body.style.background = 'yellow'
+            break;
+            case 'vermelho':
+        result = 15,00
+        texto.innerHTML = `O preço do CD é ` + result
+        document.body.style.background = 'red'
+            break;    
+            case 'azul':
+        result = 25,00
+        texto.innerHTML = `O preço do CD é ` + result
+        document.body.style.background = 'azul'
+            break;
+        
+        default:
+            break;
+    }
+}
+</script>
