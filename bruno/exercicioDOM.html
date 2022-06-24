@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+   <!-- <h1>Exercicio de idade</h1>
+   <div>A pessoa e </div> -->
+
+   <!-- <h1 id="titulo">Functions JS</h1>
+   <div id="resultado"></div> -->
+
+   <!-- <p id="verificar">gerente</p>
+   <p id="verificar">supervisor</p>
+   <p id="verificar">desenvolvidor</p>
+
+    -->
+
+    <input type="text" id="cor" placeholder="Cor"> 
+    <!-- <input type="text" id="valor" placeholder="valor"> -->
+
+    <input type="button" id="idVerificar" value="verificar">
+    <div id="result"></div>
+
+
+</body>
+</html>
+
+
+<script>
+
+    document.getElementById('idVerificar').addEventListener('click', verificarCor);
+
+
+function verificarCor(){
+    let cor = document.getElementById('cor').value;
+    let fundo = document.body.style.background;
+    let texto = document.getElementById('result');
+
+
+    switch (cor) {
+        case 'verde':
+            result = 'R$10'
+            texto.innerHTML = 'A Cor é verde e o valor é R$: ' + result;
+            document.body.style.background = 'green'
+            break;
+
+        case 'amarelo' :
+            result = 'R$15'
+            texto.innerHTML = 'A Cor é amarelo e o valor é R$: ' + result;
+            document.body.style.background = 'yellow'
+            break;
+
+        case 'azul' :
+            result = 'R$20'
+            texto.innerHTML = 'A Cor é azul e o valor é R$: ' + result;
+            document.body.style.background = 'blue'
+            break
+            
+
+        
+            
+        
+
+    
+        default:
+            break;
+    }
+
+}
+
+// ****
+
+
+// document.getElementById('gerente').innerHTML = '1,1: ' + o cargo é Gerente e o salario é R$: R$2200
+
+// *****
+
+    // function calcular(op , num1, num2) {
+    //    switch (op) {
+    //     case 'soma':
+    //         num1 + num2 
+    //         break;
+    //     case 'subtrair':
+    //         num1 - num2
+    //         break;
+    //     case 'multiplicar':
+    //         num1 * num2
+    //         break    
+
+
+    //     default:
+    //         break;
+    //    }
+           
+    //    }
+     
+    //    document.getElementById('resultado').innerHTML = 'O resultado da minha soma é: ' + result 
+
+
+    
+
+    // somar(num1 , num2);
+
+// ***
+
+//     function somar(num1, num2) {
+//         let result = 0;
+//         result = num1 + num2;
+//         document.getElementById('resultado').innerHTML = 'O resultado da minha soma é: ' + result
+
+
+//     }
+
+// somar(10, 2);    
+
+
+
+
+    // var divIdade;
+
+    // divIdade = window.document.getElementsByTagName('div')[0];
+    // var corpo = document.body;
+
+    // function setIdade(idade) {
+
+    //     if (idade == 0) {
+    //         corpo.style.background = 'white'; 
+    //         corpo.style.color = 'black';
+    //     } else if (idade >= 18) {
+    //         corpo.style.background = 'black';
+    //         corpo.style.color = 'silver';
+    //         document.write(divIdade.innerHTML + ' maior de idade, possui ' + idade + ' anos ');
+    //     } else {
+    //         corpo.style.background = 'red';
+    //         corpo.style.color = 'white'; 
+    //         console.log(divIdade);
+    //         document.write(divIdade.textContent + ' menor de idade, possui' + idade + ' anos ');
+    //     }
+    // }
+
+    // setIdade(0);
+
+
+
+
+
+
+
+
+</script>
+
+
+
