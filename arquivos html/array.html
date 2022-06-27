@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27/06</title>
+</head>
+<body>
+    <h1><em>Exercício 27/06</em></h1>
+
+    <hr>
+
+    <input type="number" name="ent1" id="ent1" placeholder="Números">
+
+    <input type="button" value="Verificação" onclick="verificar()">
+
+
+
+    <div id="result">A ordenação é: </div>
+
+
+
+</body>
+</html>
+
+<script>
+
+    let texto = document.getElementById('result');
+
+    let arrayvalores = [];
+    function verificar() {
+        let valor = document.getElementById('ent1').value;
+        valor = Number(valor);
+        arrayvalores.push(valor);
+
+        arrayvalores.sort();
+        // console.log(arrayvalores)
+
+        texto.innerHTML = arrayvalores
+    }
+</script>

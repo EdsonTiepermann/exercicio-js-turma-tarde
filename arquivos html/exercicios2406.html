@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/06</title>
+</head>
+<body>
+    <h1><em>Profissões</em></h1>
+
+    <input type="text" name="ent1" id="ent1" placeholder="Profissão">
+    <input type="number" name="ent2" id="ent2" placeholder="Porcentegem">
+
+
+    <input type="button" value="Aumento anual" onclick="aumento()">
+
+    <div id="result">Resultado:</div>
+</body>
+</html>
+<script>
+    function aumento() {
+        let profissao = document.getElementById('ent1').value;
+        let porcentagem = document.getElementById('ent2').value;
+        let texto = document.getElementById('result');
+        let fundo = document.body.style.background;
+        let salariog = 1000;
+        let salarios = 1500;
+        let d = 2000;
+        let result = 0;
+
+
+
+
+        if (profissao == "gerente") {
+            result = salariog * porcentagem; 
+            texto.innerHTML = 'A profissão é ' + profissao + ' e o salário calculado é ' + result     
+            document.body.style.background = 'green'     
+        }
+
+        if (profissao == "supervisor") {
+           result = salarios * porcentagem;
+           texto.innerHTML = 'A profissão é ' + profissao + ' e o salário calculado é ' + result       
+
+    
+        }
+
+    }
+
+    
+</script>

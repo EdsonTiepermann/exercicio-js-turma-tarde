@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+    <h1>Exercício</h1>
+
+
+    <input type="text" name="ent1" id="ent1" placeholder="Cor do CD">
+
+    <input type="button" value="Verificação" onclick="verificar()">
+
+    <div id="result">Resultado:</div>
+
+</body>
+
+</html>
+<script>
+    function verificar() {
+        let cor = document.getElementById('ent1').value;
+        let texto = document.getElementById('result');
+        let precoverde = 10;
+        let precoamarelo = 12;
+        let precoazul = 25;
+        let precovermelho = 15;
+        let result = 0;
+
+
+
+        if (cor == "verde") {
+            result = precoverde
+            texto.innerHTML = ' o CD ' + ' custa ' + result;
+
+        }
+
+        if (cor == "amarelo") {
+            result = precoamarelo
+            texto.innerHTML = ' o CD ' + ' custa ' + result;
+
+        }
+
+        if (cor == "azul") {
+            result = precoazul
+            texto.innerHTML = ' o CD ' + cor  + ' custa ' + result;
+
+        }
+
+        if (cor == "vermelho") {
+            result = precovermelho
+            texto.innerHTML = ' o CD ' + ' custa ' + result;
+
+        }
+    }
+</script>
