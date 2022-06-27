@@ -21,11 +21,19 @@
 
     -->
 
-    <input type="text" id="cor" placeholder="Cor"> 
+    <!-- <input type="text" id="cor" placeholder="Cor">  -->
     <!-- <input type="text" id="valor" placeholder="valor"> -->
 
-    <input type="button" id="idVerificar" value="verificar">
-    <div id="result"></div>
+    <!-- <input type="button" id="idVerificar" value="verificar">
+    <div id="result"></div> -->
+
+   
+
+<input type="text" id="peso" placeholder="peso">
+<br>
+<input type="button" id="verificar" value="verificar">
+
+<div id="result"></div>
 
 
 </body>
@@ -34,50 +42,115 @@
 
 <script>
 
-    document.getElementById('idVerificar').addEventListener('click', verificarCor);
+var divPeso; 
+
+   divPeso = window.document.getElementById('div')[0]
+   var altura = document.body;
+
+function setPeso(peso) {
+    let peso = document.getElementById('peso');
+      
+    if (imc < 18.5 && > 24,9) {
+        document.write(divPeso.innerHTML + 'abaixo do peso normal ' + result )
+    } else {
+        imc >= 25 && imc <= 29,9
+        document.write(divPeso.innerHTML + 'excesso de peso ' + result )
+    } else {
+        imc >= 30 && imc < 34,9
+        document.write(divPeso.innerHTML + 'obesidade classe 1 ' + result )
+    } else {
+        imc >= 35 && imc < 39,9
+        document.write(divPeso.innerHTML + 'obesidade classe 2 ' + result )
+    } else { 
+        imc >= 40
+        document.write(divPeso.innerHTML + 'obesidade classe 3 ' + result )
+    }
+   
+     
+
+       
+} 
+
+ setPeso(0);
 
 
-function verificarCor(){
-    let cor = document.getElementById('cor').value;
-    let fundo = document.body.style.background;
-    let texto = document.getElementById('result');
 
 
-    switch (cor) {
-        case 'verde':
-            result = 'R$10'
-            texto.innerHTML = 'A Cor é verde e o valor é R$: ' + result;
-            document.body.style.background = 'green'
-            break;
 
-        case 'amarelo' :
-            result = 'R$15'
-            texto.innerHTML = 'A Cor é amarelo e o valor é R$: ' + result;
-            document.body.style.background = 'yellow'
-            break;
 
-        case 'azul' :
-            result = 'R$20'
-            texto.innerHTML = 'A Cor é azul e o valor é R$: ' + result;
-            document.body.style.background = 'blue'
-            break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ***
+
+
+//     document.getElementById('idVerificar').addEventListener('click', verificarCor);
+
+
+// function verificarCor(){
+//     let cor = document.getElementById('cor').value;
+//     let fundo = document.body.style.background;
+//     let texto = document.getElementById('result');
+
+//     switch (cor) {
+//         case 'verde':
+//             result = 'R$10'
+//             texto.innerHTML = 'A Cor é verde e o valor é R$: ' + result;
+//             document.body.style.background = 'green'
+//             break;
+
+//         case 'amarelo' :
+//             result = 'R$15'
+//             texto.innerHTML = 'A Cor é amarelo e o valor é R$: ' + result;
+//             document.body.style.background = 'yellow'
+//             break;
+
+//         case 'azul' :
+//             result = 'R$20'
+//             texto.innerHTML = 'A Cor é azul e o valor é R$: ' + result;
+//             document.body.style.background = 'blue'
+//             break
             
-
+// ***
         
             
         
 
     
-        default:
-            break;
-    }
+//         default:
+//             break;
+//     }
 
-}
+// }
 
 // ****
 
 
 // document.getElementById('gerente').innerHTML = '1,1: ' + o cargo é Gerente e o salario é R$: R$2200
+
 
 // *****
 
@@ -107,7 +180,9 @@ function verificarCor(){
 
     // somar(num1 , num2);
 
+
 // ***
+
 
 //     function somar(num1, num2) {
 //         let result = 0;
