@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Calcular IMC</title>
+</head>
+
+<body>
+    <h1>Calculadora IMC</h1>
+    <p>Digite seu peso</p>
+    <input id='peso' type='number' />
+    <span>Kg</span>
+    <div>
+        <p>Digite sua altura</p>
+        <input id='altura' type='number' />
+        <span>M</span>
+    </div>
+    <div>
+        <input id='btn_calcular' class='botao' type="button" value="Calcular">
+    </div>
+    <div id="resultado"></div>
+    </div>
+
+    <script>
+
+        btn_calcular.addEventListener('click', calculandoIMC);
+
+        let botaoCalcular = document.getElementById(btn_calcular);
+
+        function calculandoIMC() {
+            let peso = document.getElementById("peso").value;
+            let p = Number(peso);
+            let altura = document.getElementById("altura").value;
+            let a = Number(altura);
+            let resultado = document.getElementById("resultado")
+            if (a != "" && p != "") {
+                let imc = (p / (a * a));
+                console.log(imc);
+                let mensagem = "";
+                if (imc < 18.5) {
+                    mensagem = "Abaixo do peso normal!"
+                } else if ((imc >= 18.5) && (imc <= 24.9)) {
+                    mensagem = "Você está com o peso normal!"
+                } else if ((imc >= 25) && (imc <= 29.9)) {
+                    mensagem = "Você está com exesso de peso!"
+                } else if ((imc >= 30) && (imc <= 34.9)) {
+                    mensagem = "Cuidado! Obesidade grau I"
+                } else if ((imc >= 35) && (imc <= 39.9)) {
+                    mensagem = "Cuidado! Obesidade grau II"
+                } else {
+                    mensagem = "Cuidado! Obesidade grau III"
+                }
+                resultado.innerText = `Seu IMC é ${imc.toFixed(2)}! ${mensagem}`;
+            } else {
+                resultado.innerText = "Preencha todos os campos!!!"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
