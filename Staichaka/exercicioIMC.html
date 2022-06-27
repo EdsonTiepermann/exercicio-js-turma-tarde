@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+
+    <!-- Escreva um script que receba o peso em kg e uma altura em m e
+a partir desses valores calcule o índice de massa corpérea do utilizador.
+imc = peso / (altura * altura)
+E mostre na tela em qual grau o usuário se enquadra.
+IMC                            RESULTAD
+menor que 18,5              abaixo do peso normal
+18,5 - 24,9                 peso normal
+25 - 29.9                   excesso de peso
+30 - 34,9                   obesidade classe I
+35 - 39,9                   obesidade classe II
+maior ou igual a 40         obesidade classe III -->
+
+</head>
+
+<body>
+
+    <input type="text" id="peso" placeholder="Peso">
+    <br>
+    <input type="text" id="altura" placeholder="Altura">
+    <br>
+    <input type="button" id="calculo" value="calcular" onclick="IMC">
+    <div id="result"></div>
+
+</body>
+
+</html>
+
+<script>
+
+    function IMC() {
+        let altura = document.getElementById('altura').value;
+        let peso = document.getElementById('peso').value;
+        let m = peso / altura * altura
+        parseFloat('altura')
+        parseFloat('peso')
+
+
+        if (m < 18, 5) {
+            let i = Abaixo do peso normal
+} else if (m > 18, 5 && m < 24, 9) {
+            let i = Peso normal
+        } else if (m > 25 && m < 29, 9) {
+            let i = Excesso de peso
+        } else if (m > 30 && m < 34, 9) {
+            let i = Obesidade classe I
+        } else if (m > 35 && m < 39, 9) {
+            let i = Obesidade classe II
+        } else if (m > 40) {
+            let i = Obesidade classe III
+        }
+
+        document.getElementById('result').innerHTML = 'O resultado do seu IMC é ' + m + 'sendo classificado como' + i;
+
+    }
+
+</script>

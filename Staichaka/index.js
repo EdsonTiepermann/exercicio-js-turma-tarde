@@ -301,5 +301,40 @@
 // }
 
 
-// Exemplos de Functions:
+// Insira uma profissão e verifique se é uma das a seguir: Gerente, Supervisor e Desenvolvedor. Se for uma delas informe a porcentagem
+// que o cargo receberá de aumento esse ano, e apresente o cargo e o salário já calculado
+// na tela através do DOM, e modifique a cor do body da tela variando entre as funções. O salário	base para os cargos são:
+// Gerente R$ 1000
+// Supervisor R$ 1500
+// Desenvolvedor R$ 2000
+
+// function Cargos(OP, Gerente, Supervisor, Desenvolvedor) {
+
+//     switch (OP) {
+//         case Gerente:
+//             result = Gerente % 10
+//             break;
+//         case Supervisor:
+//             result = Supervisor % 15
+//             break;
+//         case Desenvolvedor:
+//             result = Desenvolvedor % 20
+//         default:
+//             break;
+//     }
+// }
+
+// Cargos()
+
+
+// function IMC() {
+//     if () {
+        
+//     } else {
+        
+//     }
+// }
+
+
+// Crie e insira valores através de um input em um array e os ordene de forma dinâmica. 
 
