@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <input type="text" name="nome" id="nom1" placeholder="Nome">
+    <input type="idade" name="idade" id="idd1" placeholder="Idade">
+<br><br>
+    <input type="button" id="salvarcad" value="Salvar Cadastro">
+    <input type="button" id="verificarcad" value="verificar">
+
+    <div id="resultado"></div>
+
+
+</body>
+</html>
+
+<script>
+let arrayNome = [];
+
+document.getElementById('salvarcad').addEventListener("click", function() {
+    let obj = {};
+    let nome = document.getElementById('nom1').value;
+    let idade = document.getElementById('idd1').value;
+
+  
+    obj.name = nome;
+    obj.years = idade;
+
+    
+
+    arrayNome.push(obj);
+    console.log(obj);
+
+    // console.log(arrayNome);
+
+
+});
+
+ document.getElementById('verificarcad').addEventListener("click", function() {
+     for (let index = 0; index < arrayNome.length; index ++ ) {
+         console.log(arrayNome[index].name);
+         console.log(arrayNome[index].years);
+
+         if (arrayNome[index].name == 'Larissa') {
+             document.getElementById('resultado').innerText = arrayNome[index].name;
+         }
+
+     }
+    
+     console.log(arrayNome);
+ })
+    
+
+</script>
