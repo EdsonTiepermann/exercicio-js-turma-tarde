@@ -1,17 +1,17 @@
 let capivara = {
-    altura:  "60cm",
+    altura: "60cm",
     peso: "7 toneladas",
     habitat: "floresta",
     cor: "vermelha",
     especie: "mamífero",
 
-    andar:function () {
+    andar: function () {
         console.log("pak pak pak pak")
     },
-    comer:function () {
+    comer: function () {
         console.log("nhac nhac nhac")
     },
-    correr:function (){
+    correr: function () {
         console.log("zunnnn.. zunnnnn.. iunnnnnn")
     }
 }

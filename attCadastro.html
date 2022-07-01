@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+</head>
+
+<body>
+    <input id="entrada" type="text" placeholder="Insira seu nome">
+    <input id="idade" type="number" placeholder="Insira sua idade">
+    <br><br>
+    <hr>
+    <br>
+    <p id="p"></p>
+    <button id="salvar" type="button">Salvar</button>
+    <button id="verificar" type="button">verificar</button>
+</body>
+
+</html>
+
+<script>
+
+    let array = [];
+
+    document.getElementById("salvar").addEventListener("click", function () {
+
+        let objeto = {
+            entrada: document.getElementById("entrada").value,
+            idade: document.getElementById("idade").value,
+
+        };
+
+
+        array.push(objeto);
+
+
+    });
+
+    document.getElementById("verificar").addEventListener("click", function () {
+
+        for (let index = 0; index < array.length; index++) {
+            let element = array[index];
+            console.log(array[index].entrada);
+            console.log(array[index].idade);
+
+
+            if (array[index].nome == 'raysson') {
+                document.getElementById("p").innerText = array[index].idade;
+            }
+        }
+        console.log(array);
+    });
+
+
+</script>
