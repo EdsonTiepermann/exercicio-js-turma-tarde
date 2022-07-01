@@ -335,6 +335,3 @@
 //     }
 // }
 
-
-// Crie e insira valores através de um input em um array e os ordene de forma dinâmica. 
-
