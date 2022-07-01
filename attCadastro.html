@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <input id="entrada" type="text" placeholder="Insira seu nome">
+    <input id="nome" type="text" placeholder="Insira seu nome">
     <input id="idade" type="number" placeholder="Insira sua idade">
     <br><br>
     <hr>
@@ -28,7 +28,7 @@
     document.getElementById("salvar").addEventListener("click", function () {
 
         let objeto = {
-            entrada: document.getElementById("entrada").value,
+            nome: document.getElementById("nome").value,
             idade: document.getElementById("idade").value,
 
         };
@@ -43,12 +43,13 @@
 
         for (let index = 0; index < array.length; index++) {
             let element = array[index];
-            console.log(array[index].entrada);
+            console.log(array[index].nome);
             console.log(array[index].idade);
 
 
             if (array[index].nome == 'raysson') {
-                document.getElementById("p").innerText = array[index].idade;
+                document.getElementById("p").innerText = array[index].nome;
+                
             }
         }
         console.log(array);
