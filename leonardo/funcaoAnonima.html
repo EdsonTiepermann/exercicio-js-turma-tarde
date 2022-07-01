@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ordenação Array </title>
+    <!-- Crie e insira valores através de um input em um array e os ordene de forma dinâmica. -->
+</head>
+
+<body>
+    <h1> Ordenação Array com função anônima </h1>
+    <span> Informe um número: </span>
+    <input type="number" id="numero">
+    <button id="btnSalvar"> Adicionar e Ordenar </button> <br> <br>
+    <span id="result"></span>
+</body>
+
+</html>
+
+<script>
+    var arrayNumero = [];
+    document.getElementById('btnSalvar').addEventListener('click', function () {
+        var numeroInformado = document.getElementById('numero').value;
+        numeroInformado = parseFloat(numeroInformado);
+
+        if (arrayNumero.indexOf(numeroInformado) == -1) {
+            arrayNumero.push(numeroInformado);
+            console.log(arrayNumero);
+        } else {
+            alert('Número já adicionado');
+            return false;
+        }
+
+        function ordenacaoArray(a, b) {
+            return a - b;
+        }
+
+        arrayNumero.sort(ordenacaoArray);
+        document.getElementById('result').innerHTML = `Array ordenado: ${arrayNumero}.`;
+    });
+</script>

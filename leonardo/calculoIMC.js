@@ -2,13 +2,18 @@ function calcularIMC() {
     var pessoa = document.getElementById('nome').value;
     var altura = document.getElementById('alt').value;
     var peso = document.getElementById('kg').value;
-
+    var imc = 0;
+    var classificacao = '';
 
     altura = parseFloat(altura);
     peso = parseFloat(peso);
-    var imc = peso / (altura * altura);
 
-    var classificacao = '';
+    if (altura < 10) {
+        imc = peso / (altura * altura);
+    } else {
+        altura = altura / 100;
+        imc = peso / (altura * altura);
+    }
 
     if (imc < 16) {
         classificacao = 'baixo peso, muito grave!';
@@ -28,5 +33,5 @@ function calcularIMC() {
         classificacao = 'obesidade grau 3!';
     }
 
-    document.getElementById ('result').value = (pessoa + ' possui indice de massa corporal igual ' + imc + ', sendo classificado como: ' + classificacao);
+    document.getElementById('result').innerText = (pessoa + ' possui indice de massa corporal igual ' + imc.toFixed(2) + ', sendo classificado como: ' + classificacao);
 }

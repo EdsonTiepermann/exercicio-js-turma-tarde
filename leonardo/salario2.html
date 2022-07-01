@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Salario </title>
+</head>
+
+<body style="text-align: center;">
+    <select id="cargo">
+        <option value=""> -- Selecione a função -- </option>
+        <option value="gerente"> Gerente </option>
+        <option value="supervisor"> Supervisor </option>
+        <option value="desenvolvedor"> Desenvolvedor </option>
+    </select>
+    <input type="number" id="aumento" placeholder="Informe o aumento"> <br>
+    <button id="realizarVerificacao"> Verifica salário </button> <br>
+    <span id="salarioCalculado"> </span>
+</body>
+
+</html>
+
+<script>
+    document.getElementById('realizarVerificacao').addEventListener('click', verificaSalario);
+
+
+    function verificaSalario() {
+        let aumento = document.getElementById('aumento').value;
+        let cargo = document.getElementById('cargo').value;
+        aumento = parseFloat(aumento);
+        let gerenteSalario = 1000 + (1000 * aumento / 100);
+        let supervisorSalario = 1500 + (1500 * aumento / 100);
+        let desenvolvedorSalario = 2000 + (2000 * aumento / 100);
+
+        switch (cargo) {
+            case "gerente":
+                document.getElementById('salarioCalculado').innerText = `O cargo é de ${cargo} e o salário calculado é de R$ ${gerenteSalario}`;
+                document.body.style.backgroundColor = 'blue';
+                break;
+            case "supervisor":
+                document.getElementById('salarioCalculado').innerText = `O cargo é de ${cargo} e o salário calculado é de R$ ${supervisorSalario}`;
+                document.body.style.backgroundColor = 'green';
+                break;
+            case "desenvolvedor":
+                document.getElementById('salarioCalculado').innerText = `O cargo é de ${cargo} e o salário calculado é de R$ ${desenvolvedorSalario}`;
+                document.body.style.backgroundColor = 'red';
+                break;
+            default:
+                alert('Informe valores válidos');
+                break;
+        }
+    }
+</script>
