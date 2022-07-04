@@ -13,3 +13,4 @@ switch (cargo) {
     console.log(" O cargo é " + cargo + " o salário é " + salario)
         break;
 }
+z

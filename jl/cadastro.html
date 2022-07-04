@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="nome" placeholder=" insira seu nome ">
+    <input type="numeber" id="idade" placeholder=" insira sua idade ">
+    <br><br>
+    <button type="button" id="salvar"> salvar </button>
+    <button type="button" id="verificar"> verificar </button>
+    <div id="result"></div>
+
+
+</body>
+
+</html>
+
+<script>
+    let array = [];
+    document.getElementById("salvar").addEventListener("click", function () {
+
+        let objeto = {
+
+            nome: document.getElementById("nome").value,
+            idade: document.getElementById("idade").value,
+
+
+        };
+
+
+
+
+        array.push(objeto);
+        console.log(array);
+
+
+    });
+
+    document.getElementById('verificar').addEventListener("click", function () {
+        for (let index = 0; index < array.length; index++) {
+            console.log(array[index].nome);
+            console.log(array[index].idade);
+            if (array[index].nome == "jl") {
+                document.getElementById("result").innerText = array[index].nome;
+            }
+
+        }
+        console.log(array);
+    });
+</script>
