@@ -14,7 +14,7 @@
         <input class="porcentagem" type="number">
         <br>
         <br>
-        <input onclick="verificarCargo" class="verif" type="button">
+        <button onclick="verificarCargo" class="verif" type="button">verifique! </button>
     </div>
     <div class="result">result</div>
     <script>
@@ -35,10 +35,15 @@
                     break;
                 case "supervisor":
                     result = 1500 * porc;
-
+                    document.body.style.background = "black";
+                    document.body.style.color = "white";
+                    document.write("você é ${cargo}");
                     break;
                 case "desenvolvedor":
                     result = 2000 * porc;
+                    document.body.style.background = "red";
+                    document.body.style.color = "yellow";
+                    document.write("você é ${cargo}");
                     break;
 
                 default:
