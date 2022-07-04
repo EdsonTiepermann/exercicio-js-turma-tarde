@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CDs Loja</title>
+</head>
+
+<body>
+    <input type="text" id="entrada">
+    <br><br>
+    <input type="button" id="verificar" value="verificar" onclick="verificarValor()">
+    <div id="preco"></div>
+
+    <script>
+        document.getElementById("verificar").addEventListener("click", verificar);
+
+        function verificarValor() {
+
+            let preco = document.getElementById("preco")
+            let cor = document.getElementById("entrada").value;
+            let fundo = document.body.style.background;
+
+            switch (cor) {
+                case "verde":
+                    preco.innerHTML = "O valor do CD ${cor} R$: R$ 10,00";
+                    document.body.style.background = "green";
+                    break;
+                case "amarelo":
+                    preco.innerHTML = "O valor do CD ${cor} R$: R$ 12,00";
+                    document.body.style.background = "yellow";
+                    break;
+                case "vermelho":
+                    preco.innerHTML = "O valor do CD ${cor} R$: R$ 15,00";
+                    document.body.style.background = "red";
+                    break;
+                case "azul":
+                    preco.innerHTML = "O valor do CD ${cor} R$: R$ 25,00";
+                    document.body.style.background = "blue";
+                    break;
+                default:
+                    break;
+            }
+
+        
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

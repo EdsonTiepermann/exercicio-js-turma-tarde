@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculadora shernows</title>
+    <title>exercicios</title>
 </head>
+
 <body>
-    
+    <div>
+        <input id="a" type="number" placeholder="digite um numero">
+        <input id="b" type="number" placeholder="digite um numero">
+        <br><br>
+        <button id="soma" type="button" name="somar" onclick="somar()"> somar</button>
+        <br><br>
+        <button id="soma" type="button" name="somar" onclick="multiplicar()"> multiplicar</button>
+        <br><br>
+        <button id="soma" type="button" name="somar" onclick="dividir()"> dividir</button>
+        <br><br>
+        <button id="soma" type="button" name="somar" onclick="subtrair()"> subtrair</button>
+        <br><br>
+    </div>
+    <div id="resp">resultado : </div>
 </body>
+
 </html>
 <script>
 
 
-let a
-let b 
-let resultado;
-let operacao = "soma";
-
-switch (operacao) {
-    case "soma":
-        resultado = a+b;
-        break;
-    case "subtracao":
-        resultado = a-b;
-        break;
-    case "multiplicao":
-        resultado = a*b;
-        break;
-    case "divisao":
-        resultado = a/b;
-    default:
-        break;
-}
+    function somar() {
+        var resp = document.getElementById("resp")
+        var num1 = document.getElementById('a')
+        var num2 = document.getElementById('b')
+        var input1 = Number(num1.value)
+        var input2 = Number(num2.value)
+        resp = input1 + input2;
+        document.getElementById('resp').innerText = resp
+    }
+    function multiplicar() {
+        var resp = document.getElementById("resp")
+        var num1 = document.getElementById('a')
+        var num2 = document.getElementById('b')
+        var input1 = Number(num1.value)
+        var input2 = Number(num2.value)
+        resp = input1 * input2;
+        document.getElementById('resp').innerText = resp
+    }
+    function dividir() {
+        var resp = document.getElementById("resp")
+        var num1 = document.getElementById('a')
+        var num2 = document.getElementById('b')
+        var input1 = Number(num1.value)
+        var input2 = Number(num2.value)
+        resp = input1 / input2;
+        document.getElementById('resp').innerText = resp
+    }
+    function subtrair() {
+        var resp = document.getElementById("resp")
+        var num1 = document.getElementById('a')
+        var num2 = document.getElementById('b')
+        var input1 = Number(num1.value)
+        var input2 = Number(num2.value)
+        resp = input1 - input2;
+        document.getElementById('resp').innerText = resp
+    }
 </script>
