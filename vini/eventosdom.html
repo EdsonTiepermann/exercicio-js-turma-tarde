@@ -21,8 +21,8 @@
         manipulaçao com id...</div>
 </body>
 </html>
-<script>
-document.getElementById('container').addEventListener('click', clicar)
+<script>document.getElementById('container').addEventListener('click', clicar)
+
 document.getElementById('container').addEventListener('mouseenter', entra)
 document.getElementById('container').addEventListener('mouseout', sair)
     function clicar() {
@@ -30,11 +30,11 @@ document.getElementById('container').addEventListener('mouseout', sair)
         document.getElementById('container').style.background = 'red'
     }
     function entra() {
-        document.getElementById('container').innerText = 'cliquei teste'
+        document.getElementById('container').innerText = 'entrar'
         document.getElementById('container').style.background = 'blue'
     }
     function sair() {
-        document.getElementById('container').innerText = 'cliquei teste'
+        document.getElementById('container').innerText = 'sair'
         document.getElementById('container').style.background = 'black'
     }
 </script>
