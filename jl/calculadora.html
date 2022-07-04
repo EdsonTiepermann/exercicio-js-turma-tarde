@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <input type="number" name="ent1" id="ent1" placeholder="selecione um número">
+    <input type="number" name="ent2" id="ent2" placeholder="selecione um número"><br><br>
+    <input type="button" value="somar" onclick="somar()">
+    <input type="button" value="subtrair" onclick="subtrair()">
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+    <input type="button" value="dividir" onclick="dividir()">
+
+    <div id="result"> Resultado = </div>
 </body>
+
 </html>
+<script>
+    function somar() {
+        let num1 = document.getElementById("ent1");
+        let num2 = document.getElementById("ent2");
+        let n1 = Number(num1.value);
+        let n2 = Number(num2.value);
+        let result = 0;
+        result = n1 + n2;
+        document.getElementById("result").innerText = ` O resultado da soma entre ${n1} e ${n2} é = ${result}`;
+    }
+    function subtrair() {
+        let num1 = document.getElementById("ent1");
+        let num2 = document.getElementById("ent2");
+        let n1 = Number(num1.value);
+        let n2 = Number(num2.value);
+        let result = 0;
+        result = n1 - n2;
+        document.getElementById("result").innerText = ` O resultado da subtração entre  ${n1} e ${n2} é = ${result}`;
+    }
+    function multiplicar() {
+        let num1 = document.getElementById("ent1");
+        let num2 = document.getElementById("ent2");
+        let n1 = Number(num1.value);
+        let n2 = Number(num2.value);
+        let result = 0;
+        result = n1 * n2;
+        document.getElementById("result").innerText = ` O resultado da multiplicação entre  ${n1} e ${n2} é = ${result}`;
+    }
+    function dividir() {
+        let num1 = document.getElementById("ent1");
+        let num2 = document.getElementById("ent2");
+        let n1 = Number(num1.value);
+        let n2 = Number(num2.value);
+        let result = 0;
+        result = n1 / n2;
+        document.getElementById("result").innerText = ` O resultado da divisão entre  ${n1} e ${n2} é = ${result}`;
+    }
+</script>
